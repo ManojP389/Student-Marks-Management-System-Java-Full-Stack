@@ -27,7 +27,7 @@ public class DeleteData extends HttpServlet {
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/student",
                     "root",
-                    "root123");
+                    "type_ur_dbpass");
 
             PreparedStatement ps =
                     con.prepareStatement("delete from mark where rollno=?");
@@ -49,4 +49,5 @@ public class DeleteData extends HttpServlet {
 
         out.close();
     }
+
 }
