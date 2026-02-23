@@ -27,7 +27,7 @@ public class DispData extends HttpServlet {
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/student",
                     "root",
-                    "root123");
+                    "type_ur_dbpass");
 
             PreparedStatement ps = con.prepareStatement(
                     "select * from mark where rollno=?");
@@ -73,4 +73,5 @@ public class DispData extends HttpServlet {
 
         out.close();
     }
+
 }
