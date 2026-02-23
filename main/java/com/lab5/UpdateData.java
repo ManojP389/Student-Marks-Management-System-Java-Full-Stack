@@ -25,7 +25,7 @@ public class UpdateData extends HttpServlet {
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/student",
                     "root",
-                    "root123");
+                    "type_ur_dbpass");
 
             PreparedStatement ps = con.prepareStatement(
                     "update mark set name=?, section=?, s1=?, s2=?, s3=?, s4=?, s5=?, s6=?, l1=?, l2=? where rollno=?");
@@ -57,4 +57,5 @@ public class UpdateData extends HttpServlet {
 
         out.close();
     }
+
 }
