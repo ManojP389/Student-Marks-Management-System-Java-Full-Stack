@@ -1,0 +1,102 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Center Container */
+.container {
+    width: 40%;
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+/* Buttons */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #5a67d8;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background: #667eea;
+    color: white;
+    padding: 10px;
+}
+
+table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Navigation Menu */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #667eea;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #764ba2;
+}
