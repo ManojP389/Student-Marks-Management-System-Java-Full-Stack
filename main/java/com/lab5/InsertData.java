@@ -26,7 +26,7 @@ public class InsertData extends HttpServlet {
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/student",
                     "root",
-                    "root123");   // change if your password is different
+                    "type_ur_dbpass");  
 
             // 3. Prepare Statement
             PreparedStatement st = con.prepareStatement(
@@ -57,4 +57,5 @@ public class InsertData extends HttpServlet {
 
         out.close();
     }
+
 }
